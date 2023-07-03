@@ -1,0 +1,31 @@
+$buttonColor: #514B9A;
+$white: #ffff;
+$lightGrey: #808080;
+$lighterPurple: #e6e6fa;
+$lightPurple: #dda0dd;
+$darkPurple: #6A5ACD;
+
+.searchContainer {
+  height: 15rem;
+  width: 20%;
+  display: inline-grid;
+
+  .searchInput {
+    height: 25%;
+    margin-top: 2rem;
+    border: 1px solid $lightGrey;
+    border-radius: 5px;
+    align-self: end;
+
+  }
+
+  .searchButton {
+    height: 30%;
+    margin-top: 2rem;
+    border: 1px solid $lightGrey;
+    border-radius: 20px;
+    background-color: $buttonColor;
+    color: $white;
+  }
+}
+
