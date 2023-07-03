@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import Playlist from '../Playlist/Playlist';
 import SearchBar from '../SearchBar/SearchBar';
 import SearchResults from '../SearchResults/SearchResults';
