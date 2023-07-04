@@ -2,10 +2,10 @@ import React from "react";
 import Tracklist from "../Tracklist/Tracklist";
 import './SearchResults.scss'
 
-function SearchResults() {
+const SearchResults = ({tracks}) => {
   return(
     <div className="searchResultsContainer">
-      <Tracklist></Tracklist>
+      <Tracklist tracks={tracks}></Tracklist>
     </div>
   );
 };
