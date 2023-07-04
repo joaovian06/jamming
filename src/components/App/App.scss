@@ -3,6 +3,17 @@ $lighterPurple: #e6e6fa;
 .App {
   text-align: center;
   background-color: $lighterPurple;
+  height: 100vh;
+}
+
+.tracksContent {
+  display: flex;
+  justify-content: center;
+}
+
+.App-title {
+  padding-top: 20px;
+  margin-top: 0;
 }
 
 .App-logo {

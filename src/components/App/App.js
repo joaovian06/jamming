@@ -6,9 +6,12 @@ import SearchResults from '../SearchResults/SearchResults';
 function App() {
   return (
     <div className="App">
+      <h1 className='App-title'>Jamming</h1>
       <SearchBar></SearchBar>
-      <SearchResults></SearchResults>
-      <Playlist></Playlist>
+      <div className='tracksContent'>
+        <SearchResults></SearchResults>
+        <Playlist></Playlist>
+      </div>
     </div>
   );
 }
