@@ -5,9 +5,9 @@ import './Playlist.scss'
 function Playlist() {
   return(
     <div className="PlaylistContent">
-      <input placeholder='playlist name'/>
+      <input className="Playlist-input" placeholder='playlist name'/>
       <Tracklist></Tracklist>
-      <button>Save to Spotify!</button>
+      <button className="Playlist-save-button">Save to Spotify!</button>
     </div>
   );
 };
