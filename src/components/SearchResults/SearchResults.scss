@@ -1,5 +1,7 @@
+@import '../variables.scss';
+
 .searchResultsContainer {
-  border: 1px solid #808080;
+  border: 1px solid $lightGrey;
   border-radius: 5px;
   width: 25%;
   margin: 0 20px 0 0;

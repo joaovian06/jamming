@@ -1,6 +1,27 @@
+@import '../variables.scss';
+
 .PlaylistContent {
-  border: 1px solid #808080;
+  border: 1px solid $lightGrey;
   border-radius: 5px;
   width: 25%;
   padding: 20px;
+}
+
+.Playlist-input {
+  width: 100%;
+  height: 2rem;
+  border: 0px;
+  border-radius: 5px;
+  border-bottom: 1px solid $lightGrey;
+  margin-bottom: 2rem;
+}
+
+.Playlist-save-button {
+  height: 35px;
+  width: 35%;
+  margin-top: 1rem;
+  border: 1px solid #808080;
+  border-radius: 20px;
+  background-color: #514B9A;
+  color: white;
 }
