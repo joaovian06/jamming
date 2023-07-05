@@ -5,7 +5,6 @@ import './Tracklist.scss'
 const Tracklist = ({tracks}) => {
   return (
     <div>
-      <h2 className='title'>Results</h2>
       {tracks.map((track) => {
         return <Track track={track} key={track.id}></Track>
       })}
