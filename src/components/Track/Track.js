@@ -1,11 +1,14 @@
 import React from 'react';
+import './Track.scss'
 
 function Track({track}) {
   return (
-    <div>
-      <h3>{track.songName}</h3>
-      <p>{track.artist}</p>
-      <span>{track.album}</span>
+    <div className='Track-container'>
+      <h3 className='Track-name'>{track.songName}</h3>
+      <div className='Track-info'>
+        <h4>{track.album} | {track.artist}</h4>
+      </div>
+      <span>+</span>
     </div>
   );
 };
