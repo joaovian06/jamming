@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.scss';
 import Playlist from '../Playlist/Playlist';
 import SearchBar from '../SearchBar/SearchBar';
