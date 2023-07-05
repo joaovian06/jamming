@@ -1,0 +1,29 @@
+@import '../variables.scss';
+
+.track-container {
+  display: inline-block;
+  width: 100%;
+  text-align: start;
+  border-bottom: 1px solid $lightGrey; 
+
+  span {
+    color: #808080;
+    position: relative;
+    right: -14rem;
+    top: -1rem;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+}
+
+.track-name {
+  margin-bottom: 0;
+}
+
+.track-info {
+  display: inline-flex;
+
+  h4 {
+    margin: 10px 0 10px 0;
+  }
+}
