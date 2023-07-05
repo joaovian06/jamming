@@ -24,6 +24,11 @@ const tracks = [
   }
 ];
 
+const playlist = {
+  name: 'my first playlist',
+  tracks: tracks
+}
+
 const App = () => {
   return (
     <div className="App">
@@ -31,7 +36,7 @@ const App = () => {
       <SearchBar></SearchBar>
       <div className='tracksContent'>
         <SearchResults tracks={tracks}></SearchResults>
-        {/* <Playlist></Playlist> */}
+        <Playlist playlist={playlist}></Playlist>
       </div>
     </div>
   );
