@@ -1,29 +1,37 @@
-@import '../variables.scss';
-
-.track-container {
-  display: inline-block;
-  width: 100%;
-  text-align: start;
-  border-bottom: 1px solid $lightGrey; 
-
-  span {
-    color: #808080;
-    position: relative;
-    right: -14rem;
-    top: -1rem;
-    font-size: 2rem;
-    font-weight: 400;
-  }
+.Track {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(256, 256, 256, 0.8);
 }
 
-.track-name {
-  margin-bottom: 0;
+.Track-action {
+  cursor: pointer;
+  padding: .5rem;
+  font-size: 1.05rem;
+  transition: color .25s;
+  border: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
 }
 
-.track-info {
-  display: inline-flex;
+.Track-action:hover {
+  color: rgba(265, 265, 265, .5);
+}
 
-  h4 {
-    margin: 10px 0 10px 0;
-  }
+.Track-information {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 72px;
+}
+
+.Track-information h3 {
+  margin-bottom: .22rem;
+}
+
+.Track-information p {
+  font-size: .83rem;
+  font-weight: 300;
+  color: rgba(256, 256, 256, 0.8);
 }
