@@ -1,15 +1,25 @@
-import React from 'react';
-import Track from '../Track/Track'
-import './Tracklist.scss'
+import React from "react";
 
-const Tracklist = ({tracks}) => {
+import "./TrackList.scss";
+
+import Track from "../Track/Track";
+
+const TrackList = (props) => {
   return (
-    <div>
-      {tracks.map((track) => {
-        return <Track track={track} key={track.id}></Track>
+    <div className="TrackList">
+      {props.tracks.map((track) => {
+        return (
+          <Track
+            track={track}
+            key={track.id}
+            onAdd={props.onAdd}
+            isRemoval={props.isRemoval}
+            onRemove={props.onRemove}
+          />
+        );
       })}
     </div>
   );
 };
 
-export default Tracklist;
+export default TrackList;
